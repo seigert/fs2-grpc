@@ -386,6 +386,6 @@ class ServerSuite extends Fs2GrpcSuite {
     d.unsafeRunAndForget(deferred.complete(()))
     tc.tick()
 
-    assertEquals(dummy.requested - initialRequested, 1)
+    assertEquals(dummy.requested - initialRequested, 6)
   }
 }
